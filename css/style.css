@@ -128,6 +128,8 @@ img {
 .hero {
   padding: 0 0 60px 0;
   background: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .hero__container {
@@ -329,15 +331,16 @@ img {
   flex: 0 0 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
   padding: 0px 60px;
   min-height: 340px;
 }
 
-/* === 40% на картинку === */
+/* === 50% на картинку === */
 .portfolio__slide-image {
-  flex: 0 0 40%;
-  width: 40%;
+  flex: 0 0 50%;
+  width: 50%;
   max-width: 400px;
   height: 300px;
   object-fit: contain;
@@ -345,9 +348,9 @@ img {
   border-radius: 8px;
 }
 
-/* === 60% на описание === */
+/* === 50% на описание === */
 .portfolio__slide-info {
-  flex: 0 0 60%;
+  flex: 0 0 50%;
   padding-right: 20px;
 }
 
@@ -432,6 +435,8 @@ img {
    ============================================================ */
 .custom {
   padding: 0 0 60px 0;
+  padding-left: 10px;
+  padding-right: 10px;
   background: #ffffff;
 }
 
@@ -592,6 +597,13 @@ img {
 }
 
 @media (max-width: 768px) {
+  .header__contacts {
+    padding: 10px 0;
+  }
+  .header__contacts a {
+    padding: 6px 6px;
+  }
+
   .header__inner {
     flex-direction: column;
     align-items: stretch;
@@ -626,7 +638,7 @@ img {
   .hero__container {
     height: 400px;
     min-height: 320px;
-    border-radius: 8px;
+    border-radius: 0 !important;
   }
 
   .hero__content {
@@ -636,8 +648,13 @@ img {
     align-items: center;
   }
 
+  .hero__slider {
+    border-radius: 0 !important;
+  }
+
   .hero__overlay {
     background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 !important;
   }
 
   .hero__title {
@@ -723,7 +740,7 @@ img {
   }
   .custom__inner {
     padding: 28px 20px;
-    border-radius: 8px;
+    border-radius: 0 !important;
   }
   .custom__title {
     font-size: 20px;
