@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Количество фото в папке img/production/
   // ⚠️ ИЗМЕНИТЕ НА СВОЁ КОЛИЧЕСТВО ФАЙЛОВ
-  const productionCount = 5;
+  const productionCount = 6;
 
   let currentHero = 0;
   let heroInterval;
